@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 13</title>
+</head>
+<body>
+    <script>
+         //funciones matematicas
+         function sumar(a,b){
+            return a+b;
+         }
+         function restar(a,b){
+            return a-b;
+         }
+          function multi(a,b){
+            return a*b;
+         }
+          function divi(a,b){
+            return a/b;
+         }
+        //funcion calculadora
+        function calculadora(n1,n2,operacion){
+            switch(operacion){
+                case 'sumar' :
+                    return sumar(n1,n2);
+                case 'restar' :
+                    return restar(n1,n2); 
+                case 'multi' :
+                    return multi(n1,n2); 
+                 case 'divi' :
+                    return divi(n1,n2);   
+                    default:
+                        return "Operacion no valida...";
+
+            }
+        }
+        let numero1=parseFloat(prompt("ingrese el primer numero: "));
+         let numero2=parseFloat(prompt("ingrese el segundo numero: "));
+          let operacion=prompt("ingrese ls operacion(sumar, restar, multi,divi)");
+
+          let resultado=calculadora(numero1,numero2,operacion);
+
+          console.log("El resultado es: "+resultado);
+          document.write("El resultado es: "+resultado);
+ let numero;
+        while(true){
+            numero=parseInt(prompt("Ingresa un numero(negativo para salir)"));
+            if(numero<0)break;
+        }
+        console.log("Has salido del bucle!");
+
+
+    </script>
+
+</body>
+</html>
